@@ -12,8 +12,9 @@ class pizzaRecipe {
         console.log('Turn on oven to 220º.')
     }
 
-    private rollDough(): void {
-        console.log('Roll the dougn into a circle.')
+    private rollDough() {
+        console.log('Roll the dough into a circle.')
+        //return 42
     }
 
     private spreadSauce(): void {
@@ -36,5 +37,8 @@ const pizzaMaker = new pizzaRecipe()
 pizzaMaker.makePizza()
 /* pizzaMaker.putCheese() */
 
-// I do not completely understand what "void" is used for.  It seems like I get the same output in the terminal whether I have it or not.
-// If the point of abstraction is to hide code so the user doesn't have to worry about it, why would the user see the code anyway?  Wouldn't they be unable to see the source code?
+// I do not completely understand what "void" is used for.  It seems like I get the same output in the terminal whether
+// I have it or not. Being explicit about what I want code to do.  THe intention is for the function to run without returnign anything.
+
+// If the point of abstraction is to hide code so the user doesn't have to worry about it, why would the user see the code anyway?
+// Wouldn't they be unable to see the source code?
